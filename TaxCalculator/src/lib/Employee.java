@@ -19,6 +19,7 @@ public class Employee {
 	
 	private boolean isForeigner;
 	private boolean gender; //true = Laki-laki, false = Perempuan
+	private boolean isMarried;
 	
 	private int monthlySalary;
 	private int otherMonthlyIncome;
@@ -26,6 +27,7 @@ public class Employee {
 	
 	private String spouseName;
 	private String spouseIdNumber;
+
 
 	private List<String> childNames;
 	private List<String> childIdNumbers;
@@ -87,8 +89,10 @@ public class Employee {
 	
 	public void setSpouse(String spouseName, String spouseIdNumber) {
 		this.spouseName = spouseName;
-		this.spouseIdNumber = idNumber;
+		this.spouseIdNumber = spouseIdNumber;
+		this.isMarried = true;
 	}
+	
 	
 	public void addChild(String childName, String childIdNumber) {
 		childNames.add(childName);
